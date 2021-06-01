@@ -15,9 +15,32 @@ class _DraggableBasicPageState extends State<DraggableBasicPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(score: score),
-      body: Center(child: Stack(alignment: Alignment.center,
-      children: all.map((animal) => DraggableWidget(animal: animal),).toList(),)),
+      body: Column(
+        children: [buildOrigin(), buildTarget(context)],
+      ),
     );
-    
+  }
+
+  Widget buildTarget(BuildContext context, {required String text,
+  required AnimalType acceptType,})
+  
+
+   => CircleAvatar(
+      radius: 75,
+      backgroundColor: Theme.of(context).primaryColor,
+      child: Text(''),
+      // ! TODO VERIFICAR 
+    );
+  
+
+  Stack buildOrigin() {
+    return Stack(
+      alignment: Alignment.center,
+      children: all
+          .map(
+            (animal) => DraggableWidget(animal: animal),
+          )
+          .toList(),
+    );
   }
 }
