@@ -23,8 +23,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
   another_flushbar: ^1.10.22
+  cupertino_icons: ^1.0.2
+  emojis: ^0.9.3
+  
 
 dev_dependencies:
   flutter_test:
