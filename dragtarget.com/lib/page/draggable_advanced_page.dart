@@ -97,7 +97,7 @@ class _DraggableAdvancedPageState extends State<DraggableAdvancedPage> {
               );
             } else {
               Utils.showSnackBar(context,
-                  text: 'This Looks Wrong', color: Colors.red);
+                  text: 'This Looks Wrong 🤔', color: Colors.red);
             }
             onAccept(data);
           }),
