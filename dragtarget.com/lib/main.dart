@@ -1,3 +1,4 @@
+import 'package:dragtargetwidget/page/draggable_advanced_page.dart';
 import 'package:dragtargetwidget/page/draggable_basic_page.dart';
 import 'package:dragtargetwidget/page/draggble_text_page.dart';
 import 'package:flutter/material.dart';
@@ -31,6 +32,7 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    return DraggableBasicPage();
+    // return DraggableBasicPage();
+    return DraggableAdvancedPage();
   }
 }
